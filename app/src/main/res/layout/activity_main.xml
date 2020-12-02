@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:backgroundTint="#1E546A"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:backgroundTint="#1E546A"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:backgroundTint="#1E546A"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:backgroundTint="#1E546A"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:text=""
+            android:backgroundTint="#1E546A"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:backgroundTint="#1E546A"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:backgroundTint="#1E546A"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:backgroundTint="#1E546A"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_margin="4dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:backgroundTint="#1E546A"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+    </TableRow>
+
+     <TableRow
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center">
+
+         <Button
+             android:id="@+id/resetButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:backgroundTint="#6A1E30"
+             android:text="RESET"
+             android:textSize="25dp" />
+
+     </TableRow>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/playerOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="45dp"
+            android:text="Player One"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintTop_toBottomOf="@id/playerOne"
+            app:layout_constraintLeft_toLeftOf="@id/playerOne"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/playerTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Two"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="60dp"/>
+
+
+        <TextView
+            android:id="@+id/score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintTop_toBottomOf="@id/playerTwo"
+            app:layout_constraintLeft_toLeftOf="@id/playerTwo"
+            android:layout_marginLeft="50dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</TableLayout>
